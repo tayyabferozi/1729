@@ -132,6 +132,15 @@ p {
   }
 }
 
+.text-gradient {
+  text-decoration: none;
+  background: linear-gradient(to right, var(--tw-gradient-stops));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 13px;
+}
+
 .custom-card {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -146,6 +155,12 @@ p {
         0px 1.6px 2.8px rgba(0, 0, 0, 0.071),
         0px 3.2px 5.7px rgba(0, 0, 0, 0.089),
         0px 6.6px 11.7px rgba(0, 0, 0, 0.11), 0px 18px 32px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &.not-sm {
+    @media screen and (max-width: 767px) {
+      box-shadow: none;
     }
   }
 }

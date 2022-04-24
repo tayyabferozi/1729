@@ -42,7 +42,7 @@ const Explore = () => {
         return (
           <div
             key={"blog-post-" + idx}
-            className="blog-item custom-card with-hover"
+            className="blog-item custom-card with-hover not-sm"
           >
             <img src={img} alt={title} />
             <div className="text">
