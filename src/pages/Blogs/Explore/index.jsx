@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const postsData = [
   {
@@ -40,7 +41,8 @@ const Explore = () => {
         const { img, title, desc } = el;
 
         return (
-          <div
+          <Link
+            to="/blog"
             key={"blog-post-" + idx}
             className="blog-item custom-card with-hover not-sm"
           >
@@ -57,7 +59,7 @@ const Explore = () => {
               <h3 className="title">{title}</h3>
               <p>{desc}</p>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>

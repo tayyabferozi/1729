@@ -294,6 +294,16 @@
   }
 
   .blog-main {
+    a {
+      text-decoration: underline;
+
+      @extend %transitioned;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
     p,
     li {
       @extend %serif-font;
