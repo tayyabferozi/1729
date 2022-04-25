@@ -2,6 +2,11 @@
   transition: 0.4s ease;
 }
 
+%serif-font {
+  font-family: KaTeX_Main, ui-serif, Georgia, Cambria, Times New Roman, Times,
+    serif;
+}
+
 :root {
   --tw-gradient-from: #cd9850;
   --tw-gradient-to: #a57c51;
@@ -17,9 +22,13 @@
 * {
   margin: 0;
   padding: 0;
-  list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
+  color: $color4;
+}
+
+ol {
+  list-style-type: none;
 }
 
 body {
@@ -29,6 +38,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18.75px;
+}
+
+.page-container {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
@@ -106,7 +122,8 @@ hr {
   margin: 1rem 0;
 }
 
-p {
+p,
+li {
   color: $color4;
   font-family: KaTeX_Main, ui-serif, Georgia, Cambria, Times New Roman, Times,
     serif;
@@ -118,6 +135,10 @@ p {
   &.sm {
     font-size: 16px;
   }
+}
+
+.fs-15 {
+  font-size: 15px;
 }
 
 .link-underlined {
@@ -168,4 +189,8 @@ p {
 .text-light-1 {
   color: $color4;
   opacity: 0.8;
+}
+
+.text-light-2 {
+  color: $color3;
 }

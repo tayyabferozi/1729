@@ -9,7 +9,7 @@ const Blogs = () => {
   return (
     <MainLayout>
       <div id="blogs">
-        <div className="blogs-main">
+        <div className="page-container blogs-main">
           <BlogContent />
           <Explore />
           <MailList />

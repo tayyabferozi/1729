@@ -102,7 +102,7 @@ const Header = () => {
         </div>
         <svg
           onClick={toggleMenu}
-          class="svg-inline--fa fa-bars fa-w-14 text hamburger"
+          className="svg-inline--fa fa-bars fa-w-14 text hamburger"
           aria-hidden="true"
           focusable="false"
           data-prefix="far"
